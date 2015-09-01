@@ -2,6 +2,19 @@
 :author: Lennart Regebro
 :description: The Hovercraft! tutorial.
 
+
+
+
+----
+
+编程外的思考
+====
+
+* 有没有更好的安装方式呢？我的这种安装方式是否有问题？有的话请告诉我。（很多依赖包我采用pip和easy_install都无法安装，感觉是pip配置文件配置源的问题）
+* 一定要看官方的文档，Google和百度出来的结果往往是碎片化的，不全面。这样可以少走很多弯路，减少不必要的工作量。
+* 遇到的问题要先思考，想想是什么问题再Google和百度。
+* 解决问题要形成文档，方便自己也方便别人。
+
 ----
 
 linux安装anaconda
@@ -52,3 +65,35 @@ linux安装anaconda
 3. cd 要共享的文件夹目录下 
 
 4. sudo mount -t vboxsf windows_file linux_file
+
+----
+
+安装Virtualenv with Virtualenvwrapper
+=====================================
+
+links- Virtualenvwrapper
+
+.. _links: http://virtualenvwrapper.readthedocs.org/en/latest/ 
+
+text_link- Virtualenv with Virtualenvwrapper
+
+.. _text_link: http://roundhere.net/journal/virtualenv-ubuntu-12-10/
+
+workon 虚拟空间名字
+
+deativate 退出虚拟空间名字
+
+----
+
+wins py2与Py3共存下虚拟环境
+=============================
+
+# install
+pip install virtualenvwrapper-win
+# mk virtualenv dir
+mkvirtualenv --python=F:\softs\python2\python.exe p2  （安装在zx403413599 env文件目录下）
+# use
+workon p2
+# pip
+pip install tornado
+
